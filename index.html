@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin A. Pepín – HCI Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>CS 376 Portfolio</h1>
+    <h2>Kevin A. Pepín</h2>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Design Sprints</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a senior at Williams College majoring in Computer Science. This portfolio showcases several design sprints
+        completed throughout the HCI course I took this semester. Each project explores how thoughtful design can better serve diverse users. From
+        usability testing to accessibility audits, these projects reflect my commitment to empathetic, iterative, and
+        inclusive design.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Design Sprints</h2>
+      <div class="grid">
+        <div class="project">
+          <h3>DS1: Healthcare Appointment Usability</h3>
+          <img src="ds1.png" alt="DS1 thumbnail">
+          <p>Interviewed users about challenges with healthcare appointment systems. Identified pain points and
+            developed personas and journey maps to understand the complexity of scheduling interfaces.</p>
+          <div class="button-container">
+            <a href="https://medium.com/@kap6/improving-online-medical-appointment-scheduling-a-user-centered-approach-088e1a8184c3" target="_blank">View Design Doc</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>DS3: Gesture-Based Game Interface</h3>
+          <img src="ds3.png" alt="DS3 thumbnail">
+          <p>Designed a computer vision–based rhythm game using Unity and webcam input. Iterated on gesture-action
+            mappings for clarity and responsiveness.</p>
+          <div class="button-container">
+            <a href="https://medium.com/@ar30_72964/ds3-bdab96443de3" target="_blank">View Design Doc</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>DS5: Amazon Accessibility Audit</h3>
+          <img src="ds5.png" alt="DS5 thumbnail">
+          <p>Performed an accessibility audit of Amazon for hard-of-hearing users. Aligned redesign suggestions with
+            WCAG and real user interviews.</p>
+          <div class="button-container">
+            <a href="https://www.notion.so/your-ds5-link" target="_blank">View Design Doc</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>DS6: EphWrite Chrome Extension</h3>
+          <img src="ds6.png" alt="DS6 thumbnail">
+          <p>Built a Chrome extension for taking notes and saving citations while browsing. Emphasized intuitive,
+            accessible UI from scratch.</p>
+          <div class="button-container">
+            <a href="https://www.notion.so/your-ds6-link" target="_blank">View Design Doc</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kap6@williams.edu">kap6@williams.edu</a></p>
+      <p><a href="https://www.linkedin.com/in/kevin-pepín" target="_blank">My LinkedIn Profile</a></p>
+      <p><a href="https://github.com/kpepin">My Github Profile</a></p>
+    </section>
+  </main>
+
+  <button id="topBtn" onclick="scrollToTop()">↑ Back to Top</button>
+
+  <footer>
+    <p>© 2025 Kevin A. Pepín</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('topBtn');
+    window.onscroll = () => {
+      btn.style.display = (document.documentElement.scrollTop > 100) ? 'block' : 'none';
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>
