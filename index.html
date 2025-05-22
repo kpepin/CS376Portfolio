@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kevin A. Pepín – HCI Portfolio</title>
+  <title>Kevin A. Pepín – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1>CS 376 Portfolio</h1>
-    <h2>Kevin A. Pepín</h2>
+
+  <header class="hero">
+    <img src="code_banner.jpg" alt="Code Banner" class="hero-banner">
+    <div class="hero-overlay">
+      <h1>Kevin A. Pepín</h1>
+      <h2>Software Engineer | Problem Solver | Innovator</h2>
+    </div>
   </header>
+  
 
   <nav>
     <a href="#about">About</a>
-    <a href="#projects">Design Sprints</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>I'm a senior at Williams College majoring in Computer Science. This portfolio showcases several design sprints
-        completed throughout the HCI course I took this semester. Each project explores how thoughtful design can better serve diverse users. From
-        usability testing to accessibility audits, these projects reflect my commitment to empathetic, iterative, and
-        inclusive design.</p>
+      <img src="portrait.jpg" alt="Portrait of Kevin Pepín" class="portrait">
+      <p>I'm a senior at Williams College studying Computer Science, driven by curiosity and a passion for
+        building impactful, scalable systems. I have ve interned twice at Amazon, working on a variety of AI-integrated tools. I
+        enjoy applying theoretical foundations to real-world problems and am passionate about developing inclusive, accessible technology.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3><img src="amazon.png" alt="Amazon logo" class="inline-icon"> Amazon – SDE Intern (2024)</h3>
+        <ul>
+          <li>Built a product page simulator using Python and Streamlit to prototype AI-driven attribute edits.</li>
+          <li>Created a search simulation tool using LLMs + Elasticsearch across 6K+ products.</li>
+          <li>Improved metadata accuracy by 15% and reduced post-deployment testing needs.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3><img src="amazon.png" alt="Amazon logo" class="inline-icon"> Amazon – SDE Intern (2023)</h3>
+        <ul>
+          <li>Developed Python schema tools to speed up ML pipeline integration for 20+ stakeholders.</li>
+          <li>Worked with AWS SageMaker, Docker, and Java systems for seamless deployments.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Design Sprints</h2>
+      <h2>Projects</h2>
+
+      <div class="project horizontal-left">
+        <img src="p2p_icon.png" alt="P2P Icon" class="left-icon">
+        <div class="project-text">
+          <h3>Peer-to-Peer Textbook Marketplace</h3>
+          <p>Designed a Napster-style system with a central directory server and peer communication for efficient book discovery and trading.</p>
+        </div>
+      </div>      
+
+
+      <div class="project horizontal-left">
+        <img src="virtual_memory.png" alt="VM Manager" class="left-icon">
+        <div class="project-text">
+          <h3>Virtual Memory Manager</h3>
+          <p>Created a virtual memory pager that handled page faults and dynamic allocation for efficient multi-program support.</p>
+        </div>
+      </div>   
+
+      <h2 style="margin-top: 3rem;">Design Sprints (CS376)</h2>
       <div class="grid">
         <div class="project">
           <h3>DS1: Healthcare Appointment Usability</h3>
-          <img src="DS1.png" alt="DS1 thumbnail">
-          <p>Interviewed users about challenges with healthcare appointment systems. Identified pain points and
-            developed personas and journey maps to understand the complexity of scheduling interfaces.</p>
+          <img src="DS1.png" class="project-img">
+          <p>Interviewed users about challenges with healthcare appointment systems. Identified pain points and developed personas and journey maps.</p>
           <div class="button-container">
             <a href="https://medium.com/@kap6/improving-online-medical-appointment-scheduling-a-user-centered-approach-088e1a8184c3" target="_blank">View Design Doc</a>
           </div>
@@ -45,9 +88,8 @@
 
         <div class="project">
           <h3>DS3: Gesture-Based Game Interface</h3>
-          <img src="DS3.png" alt="DS3 thumbnail">
-          <p>Designed a computer vision–based rhythm game using Unity and webcam input. Iterated on gesture-action
-            mappings for clarity and responsiveness.</p>
+          <img src="DS3.png" alt="DS3 thumbnail" class="project-img">
+          <p>Designed a computer vision–based rhythm game using Unity and webcam input. Iterated on gesture-action mappings for clarity and responsiveness.</p>
           <div class="button-container">
             <a href="https://medium.com/@ar30_72964/ds3-bdab96443de3" target="_blank">View Design Doc</a>
           </div>
@@ -55,9 +97,8 @@
 
         <div class="project">
           <h3>DS5: Amazon Accessibility Audit</h3>
-          <img src="DS5.png" alt="DS5 thumbnail">
-          <p>Performed an accessibility audit of Amazon for hard-of-hearing users. Aligned redesign suggestions with
-            WCAG and real user interviews.</p>
+          <img src="DS5.png" alt="DS5 thumbnail" class="project-img">
+          <p>Performed an accessibility audit of Amazon for hard-of-hearing users. Aligned redesign suggestions with WCAG and real user interviews.</p>
           <div class="button-container">
             <a href="https://www.notion.so/your-ds5-link" target="_blank">View Design Doc</a>
           </div>
@@ -65,9 +106,8 @@
 
         <div class="project">
           <h3>DS6: EphWrite Chrome Extension</h3>
-          <img src="DS6.png" alt="DS6 thumbnail">
-          <p>Built a Chrome extension for taking notes and saving citations while browsing. Emphasized intuitive,
-            accessible UI from scratch.</p>
+          <img src="DS6.png" alt="DS6 thumbnail" class="project-img">
+          <p>Built a Chrome extension for taking notes and saving citations while browsing. Emphasized intuitive, accessible UI from scratch.</p>
           <div class="button-container">
             <a href="https://www.notion.so/your-ds6-link" target="_blank">View Design Doc</a>
           </div>
@@ -78,8 +118,15 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:kap6@williams.edu">kap6@williams.edu</a></p>
-      <p><a href="https://www.linkedin.com/in/kevin-pepín" target="_blank">My LinkedIn Profile</a></p>
-      <p><a href="https://github.com/kpepin">My Github Profile</a></p>
+      <p>Phone: 347-316-2689</p>
+      <p>
+        <img src="linkedin_icon.png" alt="LinkedIn" class="inline-icon">
+        <a href="https://www.linkedin.com/in/kevin-pepín" target="_blank">LinkedIn Profile</a>
+      </p>
+      <p>
+        <img src="github_icon.png" alt="GitHub" class="inline-icon">
+        <a href="https://github.com/kpepin">GitHub Profile</a>
+      </p>
     </section>
   </main>
 
@@ -98,6 +145,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-</body>
 
+</body>
 </html>
