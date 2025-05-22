@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header class="hero">
@@ -16,7 +18,7 @@
       <h2>Software Engineer | Problem Solver | Innovator</h2>
     </div>
   </header>
-  
+
 
   <nav>
     <a href="#about">About</a>
@@ -30,75 +32,114 @@
       <h2>About</h2>
       <img src="portrait.jpg" alt="Portrait of Kevin Pepín" class="portrait">
       <p>I'm a senior at Williams College studying Computer Science, driven by curiosity and a passion for
-        building impactful, scalable systems. I have ve interned twice at Amazon, working on a variety of AI-integrated tools. I
-        enjoy applying theoretical foundations to real-world problems and am passionate about developing inclusive, accessible technology.</p>
+        building impactful, scalable systems. I have ve interned twice at Amazon, working on a variety of AI-integrated
+        tools. I
+        enjoy applying theoretical foundations to real-world problems and am passionate about developing inclusive,
+        accessible technology.</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-
       <div class="job">
-        <h3><img src="amazon.png" alt="Amazon logo" class="inline-icon"> Amazon – SDE Intern (2024)</h3>
-        <ul>
-          <li>Built a product page simulator using Python and Streamlit to prototype AI-driven attribute edits.</li>
-          <li>Created a search simulation tool using LLMs + Elasticsearch across 6K+ products.</li>
-          <li>Improved metadata accuracy by 15% and reduced post-deployment testing needs.</li>
-        </ul>
+        <div class="job-container">
+          <img src="amazon.png" alt="Amazon logo" class="job-icon">
+          <div class="job-content">
+            <h3>Amazon – SDE Intern (2024)</h3>
+            <ul>
+              <li>Built a product page simulator using Python and Streamlit to prototype AI-driven attribute edits.</li>
+              <li>Created a search simulation tool using LLMs + Elasticsearch across 6K+ products.</li>
+              <li>Improved metadata accuracy by 15% and reduced post-deployment testing needs.</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="job">
-        <h3><img src="amazon.png" alt="Amazon logo" class="inline-icon"> Amazon – SDE Intern (2023)</h3>
-        <ul>
-          <li>Developed Python schema tools to speed up ML pipeline integration for 20+ stakeholders.</li>
-          <li>Worked with AWS SageMaker, Docker, and Java systems for seamless deployments.</li>
-        </ul>
+        <div class="job-container">
+          <img src="amazon.png" alt="Amazon logo" class="job-icon">
+          <div class="job-content">
+            <h3>Amazon – SDE Intern (2023)</h3>
+            <ul>
+              <li>Developed Python schema tools to speed up ML pipeline integration for 20+ stakeholders.</li>
+              <li>Worked with AWS SageMaker, Docker, and Java systems for seamless deployments.</li>
+            </ul>
+          </div>
+        </div>
       </div>
+
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="project horizontal-left">
-        <img src="p2p_icon.png" alt="P2P Icon" class="left-icon">
+      <div class="project horizontal-right">
         <div class="project-text">
           <h3>Peer-to-Peer Textbook Marketplace</h3>
-          <p>Designed a Napster-style system with a central directory server and peer communication for efficient book discovery and trading.</p>
+          <p>Designed a Napster-style system with a central directory server and peer communication for efficient book
+            discovery and trading.</p>
         </div>
-      </div>      
+        <img src="p2p_icon.png" alt="P2P Icon" class="right-icon">
+      </div>
 
-
-      <div class="project horizontal-left">
-        <img src="virtual_memory.png" alt="VM Manager" class="left-icon">
+      <div class="project horizontal-right">
         <div class="project-text">
           <h3>Virtual Memory Manager</h3>
-          <p>Created a virtual memory pager that handled page faults and dynamic allocation for efficient multi-program support.</p>
+          <p>Created a virtual memory pager that handled page faults and dynamic allocation for efficient multi-program
+            support.</p>
         </div>
-      </div>   
+        <img src="virtual_memory.png" alt="VM Manager" class="right-icon">
+      </div>
+
 
       <h2 style="margin-top: 3rem;">Design Sprints (CS376)</h2>
       <div class="grid">
         <div class="project">
           <h3>DS1: Healthcare Appointment Usability</h3>
           <img src="DS1.png" class="project-img">
-          <p>Interviewed users about challenges with healthcare appointment systems. Identified pain points and developed personas and journey maps.</p>
+          <p>Interviewed users about challenges with healthcare appointment systems. Identified pain points and
+            developed personas and journey maps.</p>
           <div class="button-container">
-            <a href="https://medium.com/@kap6/improving-online-medical-appointment-scheduling-a-user-centered-approach-088e1a8184c3" target="_blank">View Design Doc</a>
+            <a href="https://medium.com/@kap6/improving-online-medical-appointment-scheduling-a-user-centered-approach-088e1a8184c3"
+              target="_blank">View Design Doc</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>DS2: Redesigning the Sarah Portal</h3>
+          <img src="DS2.png" alt="DS2 thumbnail" class="project-img">
+          <p>Reimagined the Williams College Sarah platform to better serve transfer students. Conducted usability
+            tests, paper prototyping, and developed a high-fidelity Figma redesign.</p>
+          <div class="button-container">
+            <a href="https://medium.com/@au2/sarah-redesigned-b690e9a19499" target="_blank">View Design Doc</a>
           </div>
         </div>
 
         <div class="project">
           <h3>DS3: Gesture-Based Game Interface</h3>
           <img src="DS3.png" alt="DS3 thumbnail" class="project-img">
-          <p>Designed a computer vision–based rhythm game using Unity and webcam input. Iterated on gesture-action mappings for clarity and responsiveness.</p>
+          <p>Designed a computer vision–based rhythm game using Unity and webcam input. Iterated on gesture-action
+            mappings for clarity and responsiveness.</p>
           <div class="button-container">
             <a href="https://medium.com/@ar30_72964/ds3-bdab96443de3" target="_blank">View Design Doc</a>
           </div>
         </div>
 
         <div class="project">
+          <h3>DS4: A Library For All</h3>
+          <img src="DS4.png" alt="DS4 thumbnail" class="project-img">
+          <p>Audited a book search site to improve navigation and accessibility. Led heuristic evaluations and iterative
+            UI enhancements to make information discovery more inclusive.</p>
+          <div class="button-container">
+            <a href="https://global-starburst-153.notion.site/A-Library-For-All-1d2d340257fe803c98bcf8f10cde0b2e"
+              target="_blank">View Design Doc</a>
+          </div>
+        </div>
+
+        <div class="project">
           <h3>DS5: Amazon Accessibility Audit</h3>
           <img src="DS5.png" alt="DS5 thumbnail" class="project-img">
-          <p>Performed an accessibility audit of Amazon for hard-of-hearing users. Aligned redesign suggestions with WCAG and real user interviews.</p>
+          <p>Performed an accessibility audit of Amazon for hard-of-hearing users. Aligned redesign suggestions with
+            WCAG and real user interviews.</p>
           <div class="button-container">
             <a href="https://www.notion.so/your-ds5-link" target="_blank">View Design Doc</a>
           </div>
@@ -107,7 +148,8 @@
         <div class="project">
           <h3>DS6: EphWrite Chrome Extension</h3>
           <img src="DS6.png" alt="DS6 thumbnail" class="project-img">
-          <p>Built a Chrome extension for taking notes and saving citations while browsing. Emphasized intuitive, accessible UI from scratch.</p>
+          <p>Built a Chrome extension for taking notes and saving citations while browsing. Emphasized intuitive,
+            accessible UI from scratch.</p>
           <div class="button-container">
             <a href="https://www.notion.so/your-ds6-link" target="_blank">View Design Doc</a>
           </div>
@@ -147,4 +189,5 @@
   </script>
 
 </body>
+
 </html>

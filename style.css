@@ -177,12 +177,13 @@ footer {
 }
 
 .inline-icon {
-  width: 32px;
-  height: 32px;
+  height: 1.5em; /* scales with text size (h3) */
+  width: auto;   /* maintain aspect ratio */
   vertical-align: middle;
   margin-right: 10px;
   object-fit: contain;
 }
+
 
 .tech-stack {
   margin-top: 0.5rem;
@@ -259,5 +260,59 @@ footer {
 }
 
 .project.horizontal-left .project-text p {
+  margin: 0;
+}
+
+.job {
+  margin-bottom: 2rem;
+}
+
+.job-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.job-icon {
+  height: 40px; /* or '100px' if you want it to match the height of the content */
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.25rem; /* optional tweak to align better with text */
+}
+
+.job-content h3 {
+  margin: 0 0 0.5rem;
+}
+
+
+
+.project.horizontal-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-direction: row; /* Normal order: text then image */
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project.horizontal-right .right-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.project.horizontal-right .project-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project.horizontal-right .project-text p {
   margin: 0;
 }
